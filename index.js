@@ -97,9 +97,8 @@ const HANDLERS = {
         content: [
           {
             type: "text",
-            text: `Error: ${
-              error instanceof Error ? error.message : String(error)
-            }`,
+            text: `Error: ${error instanceof Error ? error.message : String(error)
+              }`,
           },
         ],
         metadata: {},
@@ -141,9 +140,8 @@ const HANDLERS = {
         content: [
           {
             type: "text",
-            text: `Error: ${
-              error instanceof Error ? error.message : String(error)
-            }`,
+            text: `Error: ${error instanceof Error ? error.message : String(error)
+              }`,
           },
         ],
         metadata: {},
@@ -256,7 +254,7 @@ async function main() {
       // Define the tool schemas
       const GET_API_OVERVIEW_TOOL = {
         name: "getApiOverview",
-        description: `Get an overview of an OpenAPI specification. This should be the first step when working with any API.\n\n${openpaiIds}`,
+        description: `Get an overview of an OpenAPI specification. This should be the first step when working with any API.`,
         inputSchema: {
           type: "object",
           properties: {
@@ -272,7 +270,7 @@ async function main() {
 
       const GET_API_OPERATION_TOOL = {
         name: "getApiOperation",
-        description: `Get details about a specific operation from an OpenAPI specification. Use this after getting an overview.\n\n${openpaiIds}`,
+        description: `Get details about a specific operation from an OpenAPI specification. Use this after getting an overview.`,
         inputSchema: {
           type: "object",
           properties: {
@@ -311,9 +309,8 @@ async function main() {
             content: [
               {
                 type: "text",
-                text: `Error: ${
-                  error instanceof Error ? error.message : String(error)
-                }`,
+                text: `Error: ${error instanceof Error ? error.message : String(error)
+                  }`,
               },
             ],
             isError: true,
